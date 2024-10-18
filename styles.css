@@ -1,0 +1,183 @@
+/* General resets and fonts */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #D0D9DA; /* Light grey background (same as contours) */
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+}
+
+h1 {
+    color: #D0D9DA; /* Light grey color for titles */
+    font-size: 64px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow to make them standout from the background */
+}
+
+h2 {
+    color: #FF6600; /* Orange color for titles */
+    font-size: 32px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow to make them standout from the background */
+}
+
+/* Header */
+.header {
+    background-color: #4B4B4B; /* Dark grey background */
+    color: #FF6600; /* Orange text */
+    text-align: center;
+    position: relative;
+    height: 500px; /* Increased height by 100px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content h1 {
+    margin: 0;
+    z-index: 10;
+    position: relative;
+}
+
+.phoenix-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    height: 100%; /* Make the phoenix image fill the available vertical space */
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure image is behind text */
+}
+
+/* Content area */
+.content {
+    background-color: #D0D9DA; /* Light grey background (same as contours) */
+    padding: 25px 50px 50px 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.company-info {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.employees {
+    gap: 40px;
+}
+
+.employee {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 100px 0;
+}
+
+.employee-picture {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.employee-picture img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.employee-info {
+    flex: 2;
+}
+
+/* Add responsiveness */
+@media (max-width: 700px) {
+    .employee {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employee-picture {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .employee-picture img {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .employee-info {
+        width: 100%;
+        max-width: 450px;
+        text-align: left;
+    }
+}
+
+.short-info {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #4B4B4B; /* Dark grey background */
+    color: #D0D9DA; /* Light grey text for contact info */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.copyright {
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+.foo, .bar {
+    unicode-bidi:bidi-override;
+    direction:rtl
+}
+
+.foo.emi:before { 
+    content:"6889 "
+}
+
+.foo.emi:after {
+    content:" 050"
+}
+
+.foo.san:before { 
+    content:"2735 "
+}
+
+.foo.san:after {
+    content:" 040"
+}
+
+.foo.iri:before { 
+    content:"2185 "
+}
+
+.foo.iri:after {
+    content:" 050"
+}
+
+.bar:before {
+    content:"if.tiklut-"
+}
+
+.bar.emi:after {
+    content:"@annil.ailime"
+}
+
+.bar.san:after {
+    content:"@aapneam.annas"
+}
+
+.bar.iri:after {
+    content:"@omkin.aniri"
+}
