@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-    color: #FF6600; /* Orange color for titles */
+    color: #F53F14; /* Red color for titles */
     font-size: 32px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow to make them standout from the background */
 }
